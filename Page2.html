@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+        <style>
+            .pagination a {color: black;float: left;padding: 8px 16px;text-decoration: none;}
+            .pagination a.active {background-color: #3399FF;color: white;}
+            .pagination a:hover:not(.active) {background-color: lightblue;}
+            .head{background: PaleTurquoise;height: 100px; padding-bottom: 10px; padding-top: 10px;
+                margin-top: 25px;}
+                body, html {
+                height: 100%;
+                margin: 0;
+            }
+            .d3{margin-left:70px;margin-right:750px;}
+            .result{margin-left:60px;}
+            .ask1{font-size: 24px;}
+            .input1{font-size: 18;}
+            .r1{font-size: 24px;}
+            .button1{align: center;}
+            .support{font-size: 24px;}
+            .support1{width: 975px;height: 200px;border-color: lightskyblue;}
+            input[type=radio] {
+                height:25px; 
+                width:15px; 
+                vertical-align: middle;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="head" align="center">
+                <h1><FONT FACE="angsana new"><strong>เกณฑ์ประเมินขีดความสามารถในการรองรับนักท่องเที่ยว</strong></FONT></h1>
+            </div><br>
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">เกณฑ์</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li><a href="Page1.html">ด้านกายภาพ</a></li>
+                        <li class="active"><a href="#">ด้านสิ่งอำนวยความสะดวก</a></li>
+                        <li><a href="Page3.html">ด้านการบริหารจัดการ</a></li>
+                        <li><a href="Page4.html">สรุปการประเมิน</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <table width=100% cellpadding="50" cellspacing="100" style="border:double 5px lightblue;" align="center">
+            <tr><td style="border:double 5px lightblue;"><br>
+            
+                        <h2><FONT FACE="angsana new" class="result"><strong><u>ด้านสิ่งอำนวยความสะดวก</u></strong></FONT></h2>
+                        <div class="col-md-1"></div>
+                        <br>
+            
+                        <div class="col-md-1"></div>
+                        <FONT FACE="angsana new" class="ask1">1.) ปริมาณน้ำใช้</FONT>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input class="input1" style="background: #F0F8FF">
+                        &nbsp;&nbsp;
+                        <FONT FACE="angsana new" class="ask1">ลูกบาศก์เมตร</FONT>
+                        <br>
+            
+                        <div class="col-md-1"></div>
+                        <FONT FACE="angsana new" class="ask1">2.) ปริมาณไฟฟ้าที่ใช้</FONT>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input class="input1" style="background: #F0F8FF">
+                        &nbsp;&nbsp;
+                        <FONT FACE="angsana new" class="ask1">วัตต์</FONT>
+                        <br>
+                        
+                        <div class="col-md-1"></div>
+                        <FONT FACE="angsana new" class="ask1">3.) ระบบการคมนาคมขนส่ง</FONT>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input class="input1" style="background: #F0F8FF">
+                        &nbsp;&nbsp;
+                        <FONT FACE="angsana new" class="ask1">จำนวน</FONT>
+                        <br>
+            
+                        <div class="col-md-1"></div>
+                        <FONT FACE="angsana new" class="ask1">4.) การโทรคมนาคมและการสื่อสาร (จำนวนผู้ให้บริการ)</FONT>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input class="input1" style="background: #F0F8FF">
+                        &nbsp;&nbsp;
+                        <FONT FACE="angsana new" class="ask1">จำนวน</FONT>
+                        <br>
+            
+                        <div class="col-md-1"></div>
+                        <FONT FACE="angsana new" class="ask1">5.) การจัดการของเสีย</FONT>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <FONT FACE="angsana new" class="r1"><label class="radio-inline"><input type="radio" name="optradio">มี</label></FONT>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <FONT FACE="angsana new" class="r1"><label class="radio-inline"><input type="radio" name="optradio">ไม่มี</label></FONT>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <br>
+                        <div class="col-md-1"></div>&nbsp;&nbsp;&nbsp;
+                        <FONT FACE="angsana new" class="ask1">(ถ้ามี โปรดระบุข้อ 5.1,5.2,5.3)</FONT>
+                        <br>
+            
+                        <div class="col-md-2"></div>
+                        <FONT FACE="angsana new" class="ask1">5.1) ระบบจัดการขยะ</FONT>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <FONT FACE="angsana new" class="r1"><label class="radio-inline"><input type="radio" name="optradio">มี</label></FONT>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <FONT FACE="angsana new" class="r1"><label class="radio-inline"><input type="radio" name="optradio">ไม่มี</label></FONT>
+                        <br>
+            
+                        <FONT FACE="angsana new" class="ask1">5.2) ระบบจัดการน้ำเสีย</FONT>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <FONT FACE="angsana new" class="r1"><label class="radio-inline"><input type="radio" name="optradio">มี</label></FONT>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <FONT FACE="angsana new" class="r1"><label class="radio-inline"><input type="radio" name="optradio">ไม่มี</label></FONT>
+                        <div class="col-md-2"></div>
+                        <br>
+            
+                        <FONT FACE="angsana new" class="ask1">5.3) ระบบจัดการเสียงและอากาศ</FONT>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <FONT FACE="angsana new" class="r1"><label class="radio-inline"><input type="radio" name="optradio">มี</label></FONT>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <FONT FACE="angsana new" class="r1"><label class="radio-inline"><input type="radio" name="optradio">ไม่มี</label></FONT>
+                        <div class="col-md-2"></div>
+                        <br>
+                        
+                        <div class="col-md-1"></div>
+                        <FONT FACE="angsana new" class="ask1">6.) จำนวนห้องน้ำสาธารณะ</FONT>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input class="input1" style="background: #F0F8FF">
+                        &nbsp;&nbsp;
+                        <FONT FACE="angsana new" class="ask1">จำนวนห้อง</FONT>
+                        <br>
+            
+                        <div class="col-md-1"></div>
+                        <FONT FACE="angsana new" class="ask1">7.) พื้นที่ในการจอดพาหนะ (เรือ ที่จอดรถ)</FONT>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input class="input1" style="background: #F0F8FF">
+                        &nbsp;&nbsp;
+                        <FONT FACE="angsana new" class="ask1">ตารางเมตร</FONT>
+                        <br>
+            
+                        <div class="col-md-1"></div>
+                        <FONT FACE="angsana new" class="ask1">8.) ท่าเรือ (การอำนวยความสะดวก การขึ้น-ลง)</FONT>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input class="input1" style="background: #F0F8FF">
+                        &nbsp;&nbsp;
+                        <FONT FACE="angsana new" class="ask1">จำนวน</FONT>
+                        <br>
+            
+                        <div class="col-md-1"></div>
+                        <FONT FACE="angsana new" class="ask1">9.) ร้านอาหาร</FONT>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input class="input1" style="background: #F0F8FF">
+                        &nbsp;&nbsp;
+                        <FONT FACE="angsana new" class="ask1">จำนวน</FONT>
+                        <br>
+            
+                        <div class="col-md-1"></div>
+                        <FONT FACE="angsana new" class="ask1">10.) ที่พัก</FONT>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input class="input1" style="background: #F0F8FF">
+                        &nbsp;&nbsp;
+                        <FONT FACE="angsana new" class="ask1">จำนวน</FONT>
+                        <br>
+            
+                        <div class="col-md-1"></div>
+                        <FONT FACE="angsana new" class="ask1">11.) ร้านจำหน่ายของที่ระลึก</FONT>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input class="input1" style="background: #F0F8FF">
+                        &nbsp;&nbsp;
+                        <FONT FACE="angsana new" class="ask1">จำนวน</FONT>
+                        <br>
+            
+                        <div class="col-md-1"></div>
+                        <FONT FACE="angsana new" class="ask1">12.) จำนวนสถานพยาบาล (ศูนย์รักษาพยาบาลเบื้องต้น)</FONT>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input class="input1" style="background: #F0F8FF">
+                        &nbsp;&nbsp;
+                        <FONT FACE="angsana new" class="ask1">จำนวน</FONT>
+                        <br>
+            
+                        <div class="col-md-1"></div>
+                        <FONT FACE="angsana new" class="ask1">13.) ศูนย์บริการข้อมูลแก่นักท่องเที่ยว</FONT>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input class="input1" style="background: #F0F8FF">
+                        &nbsp;&nbsp;
+                        <FONT FACE="angsana new" class="ask1">จำนวน</FONT>
+                        <br>
+            
+                        <div class="col-md-1"></div>
+                        <FONT FACE="angsana new" class="ask1">14.) จุดบริการให้ความช่วยเหลือและความปลอดภัยแก่นักท่องเที่ยว</FONT>
+                        <br>
+                        <div class="col-md-1"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <FONT FACE="angsana new" class="ask1">(จุดที่มีน้ำส้มสายชูไว้ช่วยเหลือนักท่องเที่ยว,การ์ด,....)</FONT>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input class="input1" style="background: #F0F8FF">
+                        &nbsp;&nbsp;
+                        <FONT FACE="angsana new" class="ask1">จำนวน</FONT>
+                        <br>
+            
+                        <div class="col-md-1"></div>
+                        <FONT FACE="angsana new" class="ask1">15.) พื้นที่จุดชมวิว (อาจจะเป็นข้อเสนอแนะเป็นการเพิ่ม/กระจายจุดชมวิว)</FONT>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input class="input1" style="background: #F0F8FF">
+                        &nbsp;&nbsp;
+                        <FONT FACE="angsana new" class="ask1">จำนวน/ตารางเมตร</FONT>
+                        <br>
+            
+                        <div class="col-md-1"></div>
+                        <FONT FACE="angsana new" class="ask1">16.) ระยะเวลาที่นักท่องเที่ยวใช้ในแหล่งท่องเที่ยว</FONT>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <FONT FACE="angsana new" class="r1"><label class="radio-inline"><input type="radio" name="optradio">3</label></FONT>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <FONT FACE="angsana new" class="r1"><label class="radio-inline"><input type="radio" name="optradio">6</label></FONT>
+                        <br>
+                        <div class="col-md-1"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <FONT FACE="angsana new" class="ask1">(จำนวนชั่วโมง/ครึ่งวัน = 3, จำนวนชั่วโมง/หนึ่งวัน = 6)</FONT>
+                        <br><br>
+            
+                        <div class="row">
+                            <div class="col-md-1"></div>
+                            <FONT FACE="angsana new" class="support"><label>ข้อเสนอเพิ่มเติม : </label></FONT>
+                            <br>
+                            <div class="col-md-1"></div>
+                            <FONT FACE="angsana new" class="support"><textarea class="support1" name="comment" row="10"></textarea></FONT>
+                        </div>
+                        <br><br>
+            
+                        <div align="center">
+                            <button type="button" class="btn btn-primary" onclick="submit()">SUBMIT</button>
+                        </div><br><br>
+                        <script>
+                            function submit(){
+                                alert("Data is recorded. Thank you for your answer.")
+                            }
+                        </script>
+            
+            </td></tr></table> 
+            <br>
+        </div>
+    </body>
+</html>

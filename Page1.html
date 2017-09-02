@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">        
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+        <style>
+            .pagination a {color: black;float: left;padding: 8px 16px;text-decoration: none;}
+            .pagination a.active {background-color: #3399FF;color: white;}
+            .pagination a:hover:not(.active) {background-color: lightblue;}
+            .head{background: PaleTurquoise;height: 100px; padding-bottom: 10px; padding-top: 10px;
+                margin-top: 25px;}
+                body, html {
+                height: 100%;
+                margin: 0;
+            }
+            .d3{margin-left:70px;margin-right:750px;}
+            .result{margin-left:60px;}
+            .ask1{font-size: 24px;}
+            .input1{font-size: 18;}
+            .r1{font-size: 24px;}
+            .support{font-size: 24px;}
+            .support1{width: 975px;height: 200px;border-color: lightskyblue;}
+            input[type=radio] {
+                height:25px; 
+                width:15px; 
+                vertical-align: middle;
+            }
+
+        </style>
+    </head>
+    <body>
+    
+            <div class="container">
+                <div class="head" align="center">
+                    <h1><FONT FACE="angsana new"><strong>เกณฑ์ประเมินขีดความสามารถในการรองรับนักท่องเที่ยว</strong></FONT></h1>
+                </div><br>
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="#">เกณฑ์</a>
+                        </div>
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">ด้านกายภาพ</a></li>
+                            <li><a href="Page2.html">ด้านสิ่งอำนวยความสะดวก</a></li>
+                            <li><a href="Page3.html">ด้านการบริหารจัดการ</a></li>
+                            <li><a href="Page4.html">สรุปการประเมิน</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                
+                
+                <table width="100%" cellpadding="50" cellspacing="100" style="border:double 5px lightblue; overflow-x:auto;" align="center">
+                <tr><td style="border:double 5px lightblue;"><br>
+                    
+                    <h2><FONT FACE="angsana new" class="result"><strong><u>ด้านกายภาพ</u></strong></FONT></h2>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-6">
+                            <FONT FACE="angsana new" class="ask1">1.) ขนาดพื้นที่แหล่งท่องเที่ยว (เช่น พื้นที่อ่าวสยาม (พื้นที่ชายหาดรวม) )</FONT>
+                        </div>
+                        <div class="col-md-3">
+                            <input class="input1" style="background: #F0F8FF">
+                        </div>
+                        <div class="col-md-2">
+                            <FONT FACE="angsana new" class="ask1">ตารางเมตร</FONT>
+                        </div>
+                    </div>
+                    <br>
+        
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-6">
+                            <FONT FACE="angsana new" class="ask1">2.) ขนาดพื้นที่รองรับนักท่องเที่ยว (เช่น พื้นที่ชายหาดที่นักท่องเที่ยวท่องเที่ยว )</FONT>
+                        </div>
+                        <div class="col-md-3">
+                            <input class="input1" style="background: #F0F8FF">
+                        </div>
+                        <div class="col-md-2">
+                            <FONT FACE="angsana new" class="ask1">ตารางเมตร</FONT>
+                        </div>
+                    </div>
+                    <br>
+        
+                    <div class="row">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-6">
+                                <FONT FACE="angsana new" class="ask1">3.) ความหลากหลายของกิจกรรมการท่องเที่ยว</FONT>
+                            </div>
+                            <div class="col-md-3">
+                                <input class="input1" style="background: #F0F8FF">
+                            </div>
+                            <div class="col-md-2">
+                                <FONT FACE="angsana new" class="ask1">จำนวน</FONT>
+                            </div>
+                    </div>
+                    <br>
+                    
+                    <div class="row">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-11">
+                                <FONT FACE="angsana new" class="ask1">4.) ระดับความโดดเด่น/เอกลักษณ์ของพื้นที่รองรับนักท่องเที่ยว (แบ่งระดับนักท่องเที่ยวระดับนานาชาติ ในประเทศ ท้องถิ่น)</FONT>
+                            </div>
+                    </div>
+                    <br>
+        
+                    <div class="col-md-3"></div>
+                    <FONT FACE="angsana new" class="r1"><label class="radio-inline"><input type="radio" name="optradio">5 (มากที่สุด)</label></FONT>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <FONT FACE="angsana new" class="r1"><label class="radio-inline"><input type="radio" name="optradio">4 (มาก)</label></FONT>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <FONT FACE="angsana new" class="r1"><label class="radio-inline"><input type="radio" name="optradio">3 (ปานกลาง)</label></FONT>                  
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <FONT FACE="angsana new" class="r1"><label class="radio-inline"><input type="radio" name="optradio">2 (น้อย)</label></FONT>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <FONT FACE="angsana new" class="r1"><label class="radio-inline"><input type="radio" name="optradio">1 (น้อยที่สุด)</label></FONT>
+                    <br><br><br>
+                    
+        <br><br>
+                    
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <FONT FACE="angsana new" class="support"><label>ข้อเสนอเพิ่มเติม : </label></FONT>
+                        <br>
+                        <div class="col-md-1"></div>
+                        <FONT FACE="angsana new" class="support"><textarea class="support1" name="comment" row="10"></textarea></FONT>
+                    </div>
+                    <br><br>
+        
+                    <div align="center">
+                        <button type="button" class="btn btn-primary" onclick="submit()">SUBMIT</button>
+                    </div><br><br>
+                    <script>
+                        function submit(){
+                            alert("Data is recorded. Thank you for your answer.")
+                        }
+                    </script>
+        
+                </td></tr></table> 
+                <br>
+            </div>
+    </body>
+</html>
